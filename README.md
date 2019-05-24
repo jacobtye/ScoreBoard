@@ -12,6 +12,7 @@ $ sudo bash setup.sh
 How to run code:
 
 AutoUpdate (Folder: scripts):
+
 $ sudo python update.py 
 
   - Note: it will ask for your sudo password to update the website
