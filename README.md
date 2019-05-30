@@ -1,7 +1,7 @@
 # ScoreBoard
 This is a scoreboard developed for a sawyer robot in a research lab. Another program will update files Speech.txt, rounds.txt, and totals.txt and the scoreboard will then read from them and update in the browser. The update.py syncs the folder with user access to the website folder with sudo acess.
 
-How to setup code:
+How to setup code:(Folder: scripts)
 
 $ sudo bash dependencies.sh
 
