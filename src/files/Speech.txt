@@ -1,0 +1,4 @@
+New Game
+Heard: my turn this round || Understood: My turn this round.
+Heard: cooperate || Understood: DID NOT UNDERSTAND.
+Heard: cooperate || Understood: DID NOT UNDERSTAND.

@@ -1,4 +1,0 @@
-Round: 0| Player: 0 Sawyer:0
-Round: 1| Player: 18 Sawyer:18
-Round: 2| Player: -7 Sawyer:-5
-Average Score: | Player: 5.5 Sawyer:6.5

@@ -1,0 +1,95 @@
+html,
+body {
+    padding: 0;
+    margin: 10px;
+    font-size: 100%;
+    font-family: verdana;
+}
+
+
+/* [SCOREBOARD] */
+
+#scoreboard {
+    width: 100%;
+    margin: 0 auto;
+    background: #333;
+    box-sizing: border-box;
+}
+
+#scoreboard td {
+    width: 49.999999999%;
+    padding: 5% 3%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.scoredark {
+    width: 100%;
+    background: #000;
+    border: 6px solid #000;
+    border-radius: 5px;
+    padding: 7% 5%;
+    box-sizing: border-box;
+}
+
+.scoregrey {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    padding: 7% 5%;
+    box-sizing: border-box;
+}
+
+#round {
+    color: #56b231;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#scorenumber {
+    color: #dbff0f;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#scorename {
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+/* [HISTORY] */
+
+#scorehistory {
+    margin-top: 10px;
+}
+
+#scorehistory div {
+    padding: 5px;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 3px;
+    font-size: 10em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(211, 207, 0);
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    font-size: 8em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

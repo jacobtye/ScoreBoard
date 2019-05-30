@@ -1,6 +1,6 @@
-2
-2
+5
+5
 Human Total
-11
+-3.25
 Sawyer Total
-13
+-1.75

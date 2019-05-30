@@ -1,4 +1,0 @@
-New Game
-Heard: i'm setting up the table now || Understood: DID NOT UNDERSTAND.
-Heard: it's my turn || Understood: DID NOT UNDERSTAND.
-Heard: turn this around || Understood: My turn this round.
