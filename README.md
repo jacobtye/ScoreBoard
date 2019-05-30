@@ -17,4 +17,4 @@ $ sudo python update.py
 
   - Note: it will ask for your sudo password to update the website
   
-In browser go to http://scoreboard.local/src/4a-score.php
+In browser go to http://scoreboard.local/src/score_board.php
