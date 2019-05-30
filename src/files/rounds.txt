@@ -1,6 +1,0 @@
-Round: 1| Player: -5 Sawyer:-4.5
-Round: 2| Player: -7.5 Sawyer:-2
-Round: 3| Player: 18 Sawyer:18
-Round: 4| Player: -4 Sawyer:-7
-Round: 5| Player: -4.75 Sawyer:-6.25
-Average Score: | Player: -0.65 Sawyer:-0.35

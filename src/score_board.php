@@ -3,6 +3,11 @@
 $reload = 2000; // AUTO PAGE RELOAD EVERY X MS
 $sawyer_blocks = file('files/sawyer_blocks.txt');
 $human_blocks = file('files/human_blocks.txt');
+$player_name_array = file('files/player_name.txt');
+$player_name = $player_name_array[0];
+if ($player_name == ""){
+    $player_name = "Player";
+}
 $totals = file('files/totals.txt');
 $current_round = $totals[0];
 $game_rounds = $totals[1];
@@ -13,7 +18,6 @@ $speech = file('files/Speech.txt');
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>BYU SAWYER SCOREBOARD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,23 +32,25 @@ $speech = file('files/Speech.txt');
     </script>
     <div class="w3-container">
         <header>
-            <h1>SAWYER SCOREBOARD</h1>
-            <header>
+            SAWYER SCOREBOARD
+        </header>
     </div>
     <div class="w3-container">
         <div class="w3-half">
             <div class="w3-quarter">
-                <div class="w3-card">
-                    <h2>Player Pieces</h2>
-                    <div class="w3-container"><?php
-foreach ($human_blocks as $s) {
-    if (($s == "Human\n") || ($s == "\n")) {
-        echo "";
-    } else {
-        echo "<img src=\"shapes/$s.png\" alt=\"$s\" height=\"45\"><br /><br />\n";
-    }
-}
-?></div>
+                <div class="card">
+                    <?=$player_name?>'s Blocks
+                    <div class="w3-container">
+                        <?php
+                            foreach ($human_blocks as $s) {
+                                if (($s == "Human\n") || ($s == "\n")) {
+                                    echo "";
+                                } else {
+                                    echo "<img src=\"shapes/$s.png\" alt=\"$s\" height=\"45\"><br /><br />\n";
+                                }
+                            }
+                        ?>
+                    </div>
 
                 </div>
             </div>
@@ -70,7 +76,7 @@ foreach ($human_blocks as $s) {
         </tr>
         <tr id="scorename">
             <td>
-                <div class="scoregrey">Player</div>
+                <div class="scoregrey"><?=$player_name?></div>
             </td>
             <td>
                 <div class="scoregrey">Sawyer</div>
@@ -80,18 +86,18 @@ foreach ($human_blocks as $s) {
     </div>
     </div>
     <div class="w3-quarter">
-        <div class="w3-card">
-            <h2>Sawyer Pieces</h2>
+        <div class="card">
+            Sawyer Blocks
             <div class="w3-container">
                 <?php
-foreach ($sawyer_blocks as $s) {
-    if (($s == "Sawyer\n") || ($s == "\n")) {
-        echo "";
-    } else {
-        echo "<img src=\"shapes/$s.png\" alt=\"$s\" height=\"45\"><br /><br />\n";
-    }
-}
-?>
+                    foreach ($sawyer_blocks as $s) {
+                        if (($s == "Sawyer\n") || ($s == "\n")) {
+                            echo "";
+                        } else {
+                            echo "<img src=\"shapes/$s.png\" alt=\"$s\" height=\"45\"><br /><br />\n";
+                        }
+                    }
+                ?>
             </div>
         </div>
     </div>
@@ -100,7 +106,7 @@ foreach ($sawyer_blocks as $s) {
     <div class="w3-half">
         <div class="w3-card">
             <section>
-                <h1>SPEECH</h1>
+                Speech
             </section>
             <div class="w3-container">
                 <div id="scorehistory"><?php
@@ -117,14 +123,16 @@ foreach ($speech as $s) {
     <!-- [HISTORY] -->
     <div class="w3-container">
         <footer>
-            <h2>GAME HISTORY</h2>
-            <div id="scorehistory"><?php
-foreach ($rounds as $r) {
-    printf("" . htmlspecialchars($r) . "<br />\n");
-}
-?></div>
-</body>
-</footer>
-</div>
+            <h4>GAME HISTORY</h4>
+            <div id="scorehistory">
+                <?php
+                    foreach ($rounds as $r) {
+                        printf("" . htmlspecialchars($r) . "<br />\n");
+                    }
+                ?>
+            </div>
 
+        </footer>
+    </div>
+</body>
 </html>
